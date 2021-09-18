@@ -1,0 +1,18 @@
+[package]
+name = "watchlist"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0"
+diesel = { version = "1.4", features = ["r2d2", "postgres"] }
+dotenv = "0.15"
+dotenv_codegen = "0.15"
+omdb = { git = "https://github.com/pr0t0typ3-ZeR0/omdb-rs" }
+rocket = { version = "0.5.0-rc.1", features = ["json"] }
+rocket_cors = { git = "https://github.com/lawliet89/rocket_cors", branch = "master" }
+rocket_sync_db_pools = { version = "0.1.0-rc.1", features = ["diesel_postgres_pool"] }
+serde = "1.0"
+serde_json = "1.0"
