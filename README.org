@@ -1,0 +1,16 @@
+* watchlist
+** Pre-requisites:
+- [[http://diesel.rs/guides/getting-started.html][diesel_cli]]
+
+** How to run
+- Run all pending DB migrations
+#+BEGIN_SRC sh
+  cd backend/
+  diesel migration run
+#+END_SRC
+
+- Start the server
+#+BEGIN_SRC sh
+  cd backend/
+  cargo run
+#+END_SRC
