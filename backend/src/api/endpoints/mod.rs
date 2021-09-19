@@ -1,6 +1,7 @@
 use rocket::{Build, Rocket};
 use rocket_cors::CorsOptions;
 
+pub mod error_status;
 pub mod omdb;
 pub mod watchlist;
 
